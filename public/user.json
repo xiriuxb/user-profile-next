@@ -1,0 +1,20 @@
+{
+  "name": "Jorge",
+  "lastName": "Trujillo",
+  "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  "interests": [
+    {
+      "name": "Learning",
+      "description": "Our universe is awesome so I like to learn all about it. Animals, plants, people, stars, and of course technlogy."
+    },
+    {
+      "name": "Muisc",
+      "description": "I love to listening to music and search new vibrant songs, artists and generes."
+    },
+    {
+      "name": "Videogames",
+      "description": "Not only because are funny but as a way to spend time with my nephews and have a good family time."
+    }
+  ],
+  "email": "jatrujilloch1@gmail.com"
+}
