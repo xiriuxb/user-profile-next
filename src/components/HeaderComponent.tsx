@@ -32,8 +32,8 @@ const HeaderComponent = ({ userData }: { userData: User }) => {
       <div>
         <h1>{`${userData.name} ${userData.lastName}`}</h1>
         <span>{userData.email}</span>
-        <ThemeButtonComponent />
       </div>
+      <ThemeButtonComponent />
     </header>
   );
 };
