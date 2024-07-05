@@ -1,6 +1,14 @@
 .section {
   padding-inline: 0;
   width: 100%;
+  transition: all 2s linear;  
+}
+.activeLeft{
+  animation: fadeInFromLeft 0.4s linear;
+}
+
+.activeRight{
+  animation: fadeInFromRight 0.4s linear;
 }
 
 .section h2 {
@@ -64,5 +72,27 @@
 @media(min-width: 640px) {
   .section {
     padding-inline: 3rem;
+  }
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

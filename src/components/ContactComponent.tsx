@@ -1,10 +1,11 @@
 "use client";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { useMyForm } from "@/hooks/useMyForm";
 import LoadingComponent from "./general/LoadingComponent";
 import AlertComponent from "./general/AlertComponent";
 import styles from "@/styles/Components.module.css";
 import fakeFetch from "@/helpers/fetchHelper";
+import useAnim from "@/hooks/useAnim";
 
 const EMAIL_REGEX = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
 
@@ -31,6 +32,8 @@ export const ContactComponent = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
+  const sectionRef = useRef<HTMLDivElement>(null)
+  useAnim(sectionRef, styles.activeLeft);
 
   const handleSumbitForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -50,7 +53,7 @@ export const ContactComponent = () => {
 
   return (
     <>
-      <section className={`${styles.section} ${styles.contact}`}>
+      <section ref={sectionRef} className={`${styles.section} ${styles.contact}`}>
         <h2>Contact:</h2>
         <div>
           <form action="post" onSubmit={(e) => handleSumbitForm(e)}>
