@@ -32,7 +32,7 @@ const AlertComponent = ({
     setHidding(true);
     setTimeout(() => {
       setAlMessage("");
-    }, (animationMs / 2));
+    }, (animationMs / 4));
   };
 
   return (
