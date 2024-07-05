@@ -1,9 +1,9 @@
 import AlertComponent from "@/components/general/AlertComponent";
 import "@testing-library/jest-dom";
-import { act, queryByText, render, screen, waitFor } from "@testing-library/react";
+import { act, render, waitFor } from "@testing-library/react";
 import styles from "@/styles/MyAlert.module.css";
 
-describe("Page", () => {
+describe("AlertComponent", () => {
   it("should render alert with correct message and type", () => {
     const { getByText, container } = render(
       <AlertComponent message="Test Message" type="success" />
