@@ -1,7 +1,7 @@
 .section {
   padding-inline: 0;
   width: 100%;
-  transition: all 2s linear;  
+  transition: all 1s linear;  
 }
 .activeLeft{
   animation: fadeInFromLeft 0.4s linear;
@@ -27,6 +27,10 @@
   padding: 0.5rem 0.5rem;
   resize: none;
   font-family: inherit;
+  border-radius: 5px;
+  border:1px solid var(--input-border-color);
+  background-color: var(--input-back-color);
+  color: var(--input-text-color);
 }
 
 .sendButton {

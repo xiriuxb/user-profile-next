@@ -16,17 +16,32 @@
   --header-height: 10rem;
   --header-min-height: 3rem;
 
-  --sm-screen:640px;
-  --md-screen:768px;
-  --lg-screen:1024px;
+  --input-border-color: #767676;
+  --input-back-color: #fff;
+  --input-text-color: #000;
 
+  --sm-screen: 640px;
+  --md-screen: 768px;
+  --lg-screen: 1024px;
+}
+
+:root[data-theme="dark"] {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 62, 62, 62;
+  --background-end-rgb: 37, 37, 37;
+  --input-back-color: #3b3b3b;
+  --input-border-color: #858585;
+  --input-text-color: #f1f1f1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb:  2, 13, 46;
+    --background-start-rgb: 2, 13, 46;
     --background-end-rgb: 2, 5, 19;
+    --input-back-color: #3b3b3b;
+    --input-border-color: #858585;
+    --input-text-color: #f1f1f1;
   }
 }
 

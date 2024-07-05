@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { User } from "@/types/user";
 import styles from "@/styles/Header.module.css";
+import ThemeButtonComponent from "./general/ThemeButtonComponent";
 
 const MAX_SCROLL = 80;
 
@@ -31,6 +32,7 @@ const HeaderComponent = ({ userData }: { userData: User }) => {
       <div>
         <h1>{`${userData.name} ${userData.lastName}`}</h1>
         <span>{userData.email}</span>
+        <ThemeButtonComponent />
       </div>
     </header>
   );
