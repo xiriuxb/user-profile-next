@@ -1,0 +1,66 @@
+.myAlert {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  min-width: 5rem;
+  max-width: 30rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.myAlert > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.myAlert button {
+  background-color: #6b6b6b75;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+}
+
+.myAlert button:hover {
+  background-color: #46454575;
+}
+
+.myAlert.danger {
+  background-color: var(--danger-color);
+}
+
+.myAlert.info {
+  background-color: var(--info-color);
+}
+
+.myAlert.success {
+  background-color: var(--success-color);
+}
+
+.myAlert.myAlertIn {
+  animation-name: myAlertIn;
+}
+
+.myAlert.myAlertOut {
+  animation-name: myAlertOut;
+}
+
+@keyframes myAlertIn {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+}
+
+@keyframes myAlertOut {
+  0% {
+    bottom: 1rem;
+  }
+  100% {
+    bottom: -4rem;
+  }
+}

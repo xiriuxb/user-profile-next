@@ -6,6 +6,7 @@ import { ContactComponent } from "@/components/ContactComponent";
 import HeaderComponent from "@/components/HeaderComponent";
 import AboutComponent from "@/components/AboutComponent";
 import InterestsComponent from "@/components/InterestsComponent";
+import AlertComponent from "@/components/general/AlertComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 

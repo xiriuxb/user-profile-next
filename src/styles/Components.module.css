@@ -1,36 +1,10 @@
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  background: rgba(var(--background-start-rgb), 1);
-  padding: 1rem 2rem;
-  font-family: var(--font-mono);
-  text-align: end;
-}
-
-.header img {
-  border-radius: 50%;
-  width: 6rem;
-  height: auto;
-}
-
-.header div {
-  padding-inline: 1rem;
-}
-
-.header span {
-  font-size: small;
-}
-
 .section {
-  padding-inline: 3rem;
+  padding-inline: 0;
   width: 100%;
 }
 
 .section h2 {
-    margin-block: 1rem;
+  margin-block: 1rem;
 }
 
 .formGroup {
@@ -38,6 +12,7 @@
   flex-direction: column;
   width: 100%;
 }
+
 .formGroup input,
 .formGroup textarea {
   font-size: medium;
@@ -54,14 +29,40 @@
 }
 
 .contact form {
-  width: 25rem;
+  max-width: 30rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
 }
 
-.contact div {
+.contact > div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputError {
+  background-color: #ff00004f;
+  margin-top: 0.2rem;
+  border: 1px solid #ff8383;
+  border-radius: 5px;
+  font-size: smaller;
+  line-height: initial;
+  padding-inline: 0.5rem;
+  height: auto;
+  transition: all 0.2s linear;
+}
+
+.hidden {
+  border: 0;
+  margin: 0;
+  height: 0;
+}
+
+@media(min-width: 640px) {
+  .section {
+    padding-inline: 3rem;
+  }
 }

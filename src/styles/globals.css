@@ -8,6 +8,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --danger-color: #ff5861;
+  --success-color: #00d989;
+  --info-color: #00b5ff;
+
+  --header-height: 10rem;
+  --header-min-height: 3rem;
+
+  --sm-screen:640px;
+  --md-screen:768px;
+  --lg-screen:1024px;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +36,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {
